@@ -12,9 +12,8 @@ node {
 
         stage("SSH Steps Rocks!") {
             sshCommand remote: remote, command: 'mkdir -p /usr/local/jenkins', sudo: isSudo
-            sshPut remote: remote, from: 'test.sh', into: '/usr/local/jenkins/'
-            sshCommand remote: remote, command: 'sh /usr/local/jenkins/test.sh', sudo: isSudo
-            sshRemove remote: remote, path: '/usr/local/jenkins/test.sh'
+            sshPut remote: remote, from: 'test.sh', into: '.'
+            sshCommand remote: remote, command: 'sh test.sh', sudo: isSudo
         }
     }
 }
