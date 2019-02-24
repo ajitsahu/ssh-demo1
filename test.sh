@@ -2,3 +2,4 @@
 ls -ltr
 date
 uname -a
+exit 0
