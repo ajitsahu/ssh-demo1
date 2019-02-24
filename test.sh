@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-ls -ltr && date && uname -a
+uname -a
 exit 0
