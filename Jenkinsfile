@@ -1,6 +1,6 @@
 def remote = [:]
 remote.name = "node1"
-remote.host = "ajitsahu4c.mylabserver.com"
+remote.host = "ajitsahu3c.mylabserver.com"
 remote.allowAnyHosts = true
 
 node {
