@@ -11,7 +11,6 @@ node {
         remote.password = password
 
         stage("SSH Steps Rocks!") {
-            sshCommand remote: remote, command: 'mkdir -p /usr/local/jenkins', sudo: isSudo
             sshPut remote: remote, from: 'test.sh', into: '.'
             sshCommand remote: remote, command: 'sh test.sh', sudo: isSudo
         }
