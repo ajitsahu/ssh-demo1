@@ -14,7 +14,6 @@ node {
             sshScript remote: remote, script: 'test.sh'
             sshPut remote: remote, from: 'test.sh', into: '.'
             sshGet remote: remote, from: 'test.sh', into: 'test_new.sh', override: true
-            sshRemove remote: remote, path: 'test.sh'
         }
     }
 }
