@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 ls -ltr
 uname -a
 date
