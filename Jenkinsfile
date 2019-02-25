@@ -1,7 +1,7 @@
 def remote = [:]
 def isSudo = true
 remote.name = "node1"
-remote.host = "ajitsahu3c.mylabserver.com"
+remote.host = "ajitsahu4c.mylabserver.com"
 remote.allowAnyHosts = true
 remote.isSudo = true
 
